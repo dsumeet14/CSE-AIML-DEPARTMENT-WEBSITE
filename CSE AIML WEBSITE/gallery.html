@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>GALLERY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home_style.css">
+
+	<!--Style CSS-->
+	<style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+   
+h1 {
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2px;
+}
+   
+h6 {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+   
+.myProducts-gallery img{
+    height: 100px;
+    margin: 2px ;
+    cursor: pointer;
+    display: block;
+    opacity: 1;
+    
+}
+   
+.myProducts-gallery img:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
+   
+.myProducts-gallery {
+    float: left;
+}
+   
+.myProducts {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+   
+.image-container img {
+    height: 500px;
+    transition: transform 1s;
+}
+   
+.image-container img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+   
+.image-container {
+    float: right;
+    padding: 10px;
+}
+    </style>
+</head>
+
+<body bgcolor="#DEDBDE">
+    <img src="../College Website/Images/Logo.png" alt="img" width="130" height="100" style="float:left;" class="sticky" />
+    <h1 class="mainhdg" id="myHeader">BHARATI VIDYAPEETH Deemed University <br>Department of Engineering & Technology Off-Campus <br>
+        <center>Computer Science Engineering (Artificial Intelligence & Machine Learning)</center></h1>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <nav class="navlist">
+        <ul>
+            <li><a target="_self" href="../College Website/Home.html"><img src="../College Website/Images/Home.png" alt="img" width="50" height="25"></a></li>
+            <li>
+                <a target="_self"><b>ABOUT US<i class="fas fa-caret-down"></i></b></a>
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/About Us.html"><b>BHARATI VIDYAPEETH</b></a></li>
+                        <li><a target="_self" href="../College Website/Messages.html"><b>MESSAGES</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/programme.html"><b>PROGRAM</b></a></li>
+            <li><a target="_self" href="../College Website/faculties.html"><b>FACULTIES</b></a></li>
+            <li>
+                <a href=""><b>STUDENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/studentdetails.html"><b>STUDENT INFORMATIONS</b></a></li>
+                        <li><a target="_self" href="../College Website/Achievements.html"><b>ACHIEVEMENTS</b></a></li>
+                        <li><a target="_self" href="../College Website/papers.html"><b>STUDY MATERIALS</b></a></li>
+                        <li><a target="_self" href="../College Website/timetable.html"><b>TIME TABLE</b></a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a target="_self" href="../College Website/university.html"><b>UNIVERSITY</b></a></li>
+            <li><a target="_self" href="../College Website/admission.html"><b>ADMISSION</b></a></li>
+            <li>
+                <a href=""><b>EVENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/workshop.html"><b>WORKSHOP</b></a></li>
+                        <li><a target="_self" href="../College Website/fest.html"><b>FEST</b></a></li>
+                        <li><a target="_self" href="../College Website/gallery.html"><b>GALLERY</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/Placement.html"><b>PLACEMENT</b></a></li>
+            <li><a target="_self" href="../College Website/alumni.html"><b>ALUMNI</b></a></li>
+            <li><a target="_self" href="../College Website/blog.html"><b>BLOG</b></a></li>
+            <li><a target="_self" href="../College Website/faq.html"><b>FAQ</b></a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <div style="height:55%;"></div>
+    <h1>Welcome to our aiml gallery</h1>
+	<h6>All the memories are stored here!</h6>
+    </div>
+    <hr>
+    
+	<div class="myProducts" style="height:45%;">
+		<div class="myProducts-gallery">
+			<img src="gallery1.jpeg" width="200" height="150"				alt="click here"
+				onclick="myImageFunction(this)" align="left">
+			<img src="gallery2.jpeg" width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+			<img src="gallery3.jpeg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+			<img src="gallery4.jpeg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+            <img src="gallery5.jpeg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+            <img src="gallery6.jpeg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+            <img src="gallery7.jpeg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+                <img src="gallery8.jpeg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+                <img src="gallery9.jpg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+                <img src="gallery10.jpg"	width="200" height="150"			alt="click here"
+				onclick="myImageFunction(this)" align="left">
+		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src="gallery1.jpeg"	width="700" height="500"			alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+    
+</body>
+
+</html>

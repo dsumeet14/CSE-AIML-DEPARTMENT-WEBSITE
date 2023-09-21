@@ -1,0 +1,275 @@
+<html>
+<body>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home_style.css">
+<style>
+body {font-family: Arial;
+background-color: rgb(219 222 222);}
+
+hr{
+width:100%;
+text-align:center;
+border-width:1;
+color:black;
+background-color:black
+}
+
+h2{
+  text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-left:20px ;
+}
+</style>
+</head>
+
+<body bgcolor="#DEDBDE"> 
+  <img src="../College Website/Images/Logo.png" alt="img" width="130" height="100" style="float:left;" class="sticky" />
+  <h1 class="mainhdg" id="myHeader">BHARATI VIDYAPEETH Deemed University <br>Department of Engineering & Technology Off-Campus <br>
+    <center>Computer Science Engineering (Artificial Intelligence & Machine Learning)</center></h1>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <nav class="navlist">
+        <ul>
+            <li><a target="_self" href="../College Website/Home.html"><img src="../College Website/Images/Home.png" alt="img" width="50" height="25"></a></li>
+            <li>
+              <a target="_self"><b>ABOUT US<i class="fas fa-caret-down"></i></b></a>
+              <div class="dd__menu">
+                  <ul>
+                      <li><a target="_self" href="../College Website/About Us.html"><b>BHARATI VIDYAPEETH</b></a></li>
+                      <li><a target="_self" href="../College Website/Messages.html"><b>MESSAGES</b></a></li>
+                  </ul>
+              </div>
+          </li>
+            <li><a target="_self" href="../College Website/programme.html"><b>PROGRAM</b></a></li>
+            <li><a target="_self" href="../College Website/faculties.html"><b>FACULTIES</b></a></li>
+            <li>
+                <a href=""><b>STUDENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/studentdetails.html"><b>STUDENT INFORMATIONS</b></a></li>
+                        <li><a target="_self" href="../College Website/Achievements.html"><b>ACHIEVEMENTS</b></a></li>
+                        <li><a target="_self" href="../College Website/papers.html"><b>STUDY MATERIALS</b></a></li>
+                        <li><a target="_self" href="../College Website/timetable.html"><b>TIME TABLE</b></a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a target="_self" href="../College Website/university.html"><b>UNIVERSITY</b></a></li>
+            <li><a target="_self" href="../College Website/admission.html"><b>ADMISSION</b></a></li>
+            <li>
+                <a href=""><b>EVENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/workshop.html"><b>WORKSHOP</b></a></li>
+                        <li><a target="_self" href="../College Website/fest.html"><b>FEST</b></a></li>
+                        <li><a target="_self" href="../College Website/gallery.html"><b>GALLERY</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/Placement.html"><b>PLACEMENT</b></a></li>
+            <li><a target="_self" href="../College Website/alumni.html"><b>ALUMNI</b></a></li>
+            <li><a target="_self" href="../College Website/blog.html"><b>BLOG</b></a></li>
+            <li><a target="_self" href="../College Website/faq.html"><b>FAQ</b></a></li>
+        </ul>
+    </nav>
+<br><br><br><h2>Programme Structure</h2>
+
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'Over')" id="defaultOpen">Overview</button>  
+<button class="tablinks" onclick="openCity(event, 'PO')">Programme Outcomes (POs)</button>
+<button class="tablinks" onclick="openCity(event, 'Def')">Defintions and Structure</button>
+<button class="tablinks" onclick="openCity(event, 'Cred')">Distribution of Credits</button>
+</div>
+
+<div id="Over" class="tabcontent" >
+<center><img src="../College Website/Images/Logo.PNG" alt="LOGO" width="150" height="150"></center>
+<h2>BHARATI VIDYAPEETH (DEEMED TO BE UNIVERSITY)</h2>
+<h2>COLLEGE OF ENGINEERING, PUNE</h2>
+<h3>VISION OF UNIVERSITY:</h3>
+<p> Social Transformation Through Dynamic Education</p><br>
+
+<h3>MISSION OF UNIVERSITY:</h3>
+<ul>
+  <li>To make available quality education in different areas of knowledge to the students as per their choice and inclination.</li><br>
+  <li>To offer education to the students in a conducive ambience created by enriched infrastructure and academic facilities in its campuses.</li><br>
+  <li>To bring education within the reach of rural, tribal and girl students by providing them substantive fee concessions and subsidized hostel and mess facilities.</li><br>
+  <li>To make available quality education to the students of rural, tribal, and other deprived sections of the population.</li><br>
+</ul>
+
+<h3>VISION OF THE INSTITUTE:</h3>
+<p>To be World Class Institute for Social Transformation Through Dynamic Education.</p><br>
+
+<h3>MISSION OF THE INSTITUTE:</h3>
+<ul>
+  <li>To provide quality technical education with advanced equipment, qualified faculty members, infrastructure to meet needs of profession and society. </li><br>
+  <li>To provide an environment conducive to innovation, creativity, research and entrepreneurial leadership.</li><br>
+  <li>To practice and promote professional ethics, transparency and accountability for social community, economic and environmental conditions.</li>
+</ul><br>
+
+<h3>VISION OF THE DEPARTMENT:</h3>
+<p>To impart quality education and produce high quality, creative and ethical engineers, instill professionalism, enhance student’s problem-solving skills in the domain of Artificial Intelligence and Machine Learning (AI and ML).</p><br>
+
+<h3>MISSION OF THE DEPARTMENT:</h3>
+<ul>
+  <li>To provide skill-based education to master the students in problem solving and analytical skills to enhance their niche expertise in the field AI and ML.</li><br>
+  <li>To educate the students with latest technologies to update their knowledge in the field of AI and ML.</li><br>
+  <li> To guide students in research on AI and ML, with aim of having an ethical impact on society by tackling societal grand challenges.</li>
+</ul><br>
+
+<h3>PROGRAMME EDUCATIONAL OBJECTIVES (PEOs)</h3>
+<p>Graduates will be able to</p>
+<ul>
+  <li>To adapt, contribute and innovates ideas in the field of Artificial Intelligence and Machine Learning or productively engage in research.</li><br>
+  <li>To pursue higher studies in engineering or management.</li><br>
+  <li>Demonstrate technical skills, competency in AI and ML and promote collaborative learning and team work spirit through multi -disciplinary projects and diverse professional activities</li><br>
+  <li>To accomplish sustainable progress in the emerging computing technologies through life-long learning.</li> 
+</ul><br>
+
+<h3>PROGRAMME SPECIFIC OUTCOMES (PSOs)</h3>
+<p>At the end of the program, Graduates will be able to </p>
+<p><b>PSO 1: </b>Design and develop intelligent automated systems applying mathematical, analytical, programming and operational skills to solve real world problems.</p>
+<p><b>PSO 2: </b>Apply machine learning techniques, software tools to conduct experiments, interpret data and to solve complex problems</p>
+<p><b>PSO 3: </b> Implement engineering solutions for the benefit of society by the use of AI and ML.</p><br>
+
+<hr>
+<br><a href="Department.pdf"><strong>AIML DEPARTMENT BROCHURE</strong></a><br>
+</div>
+
+<div id="PO" class="tabcontent">
+ <h3>Programme Outcomes (POs)</h3>
+<ul>
+  <li>Apply the knowledge of mathematics, science, engineering fundamentals and principles of Artificial Intelligence & Machine Learning to solve complex problems.</li><br>
+  <li>Identify, formulate, review, analyse complex problems, interpret data and solve through conducting experiments.</li><br>
+  <li>Design safe, socio-economical and environment friendly solutions or systems for complex engineering problems.</li><br>
+  <li>Design experimentation and interpretation of data using research-based knowledge and methods to provide valid solution</li><br>
+  <li>Create, select, and apply appropriate techniques, and modern engineering tools </li><br>
+  <li>Apply reasoning informed by the contextual knowledge to assess professional, ethical, legal, security and social issues aswell as responsibilities.</li><br>
+  <li>Demonstrate the knowledge about the need for sustainable development in context to the environment and society</li><br>
+  <li>Apply ethical principles in engineering practices and commit to professional ethics.</li><br>
+  <li>Function effectively on multidisciplinary teams to accomplish the goal</li><br>
+  <li>To communicate effectively verbally and in writing on complex engineering activities with a range of audiences.</li><br>
+  <li>Apply the knowledge and understanding of the engineering and management principles as a member and leader in a team to manage projects</li><br>
+  <li>To recognize the need for lifelong learning and are expected to apply the techniques, skills, and modern engineering toolsnecessary for engineering practice and knowledge growth.</li>
+</ul>
+</div>
+
+<div id="Def" class="tabcontent">
+<h3>Definitions and structures</h3>
+<center><img src="../College Website/Images/co.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/def.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/def2.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/srt1.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/srt2.PNG" alt="LOGO" width="900" height="700"></center>
+</div>
+
+<div id="Cred" class="tabcontent">
+<h3><u>Distribution of credits from SEM I to SEM VIII</u></h3>
+<center><img src="../College Website/Images/Sem 1.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/Sem 2.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/Sem 3.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/Sem 4.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/Sem 5.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/Sem 6.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/Sem 7.PNG" alt="LOGO" width="900" height="700"></center><br><hr>
+<center><img src="../College Website/Images/Sem 8.PNG" alt="LOGO" width="900" height="700"></center>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+ document.getElementById("defaultOpen").click();
+</script>
+
+    <div class="foot" align="right">
+        <footer align="left">
+            <h5>ADDRESSES</h5>
+            <p>Bharati Vidyapeeth Deemed University DET Off-Campus Navi-Mumbai,<br>
+            Sector 4, Kharghar, <br>
+            Navi Mumbai, <br>
+            Maharashtra 410210.   </p><p>      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60347.92259580854!2d73.0238024!3d19.0309479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c38a077ce761%3A0x2133ad39bcf67618!2sBharati%20Vidyapeeth%20Deemed%20University%20Department%20of%20Engineering%20and%20Technology%20(DET)%20Campus%20Mumbai!5e0!3m2!1sen!2sin!4v1657965875394!5m2!1sen!2sin" width= 110" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </p><br>
+        <h5>CONTACT US</h5> 
+        <p>+91 987-654-3210</p><br><br>
+
+        </footer>
+        
+        <footer>
+            Website visit count:
+        </footer>
+        <div class="website-counter">
+        </div>
+        </footer>
+        
+        
+
+        <footer align="center">
+            Copyright @2022
+        </footer>
+        
+        
+    </div>    
+    
+</body>
+</html> 

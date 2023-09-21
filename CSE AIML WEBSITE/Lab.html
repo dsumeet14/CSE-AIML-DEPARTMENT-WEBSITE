@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>LABS</title>
+    <link rel="stylesheet" href="home_style.css">
+<style>    
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.lab{
+    width:100%;
+    padding: 78px 0px;
+    background-color:rgb(212, 209, 174);
+}
+.lab img{
+    height: 500px;
+    width: 400px;
+}
+
+
+.content{
+    margin-left: 50px;
+    width:800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.image{
+    width: 1130px;
+    max-width: 80%;
+    margin-left: 60px;
+    display: flex;
+  /* align-items: left;
+    justify-content:space-around;*/
+}
+
+.content h1{
+    color: black;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.content h3{
+    color: black;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.content p{
+    color:slategray;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.content h4{
+    color: black;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+button{
+    background: white ;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius:30px;
+    transition:.4s;
+}
+button:hover{
+    background: transparent;
+    border:2px solid white;
+    cursor:pointer;
+}
+iframe{
+    height: 350px;
+    filter: invert(100%);
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="home_style.css">
+</head>
+<body bgcolor="#DEDBDE">
+    
+    <img src="../College Website/Images/Logo.png" alt="img" width="130" height="100" style="float:left;" class="sticky" />
+    <h1 class="mainhdg" id="myHeader">BHARATI VIDYAPEETH Deemed University <br>Department of Engineering & Technology Off-Campus <br>
+        <center>Computer Science Engineering (Artificial Intelligence & Machine Learning)</center></h1>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <nav class="navlist">
+        <ul>
+            <li><a target="_self" href="../College Website/Home.html"><img src="../College Website/Images/Home.png" alt="img" width="50" height="25"></a></li>
+            <li>
+                <a target="_self"><b>ABOUT US<i class="fas fa-caret-down"></i></b></a>
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/About Us.html"><b>BHARATI VIDYAPEETH</b></a></li>
+                        <li><a target="_self" href="../College Website/Messages.html"><b>MESSAGES</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/programme.html"><b>PROGRAM</b></a></li>
+            <li><a target="_self" href="../College Website/faculties.html"><b>FACULTIES</b></a></li>
+            <li>
+                <a href=""><b>STUDENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/studentdetails.html"><b>STUDENT INFORMATIONS</b></a></li>
+                        <li><a target="_self" href="../College Website/Achievements.html"><b>ACHIEVEMENTS</b></a></li>
+                        <li><a target="_self" href="../College Website/papers.html"><b>STUDY MATERIALS</b></a></li>
+                        <li><a target="_self" href="../College Website/timetable.html"><b>TIME TABLE</b></a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a target="_self" href="../College Website/university.html"><b>UNIVERSITY</b></a></li>
+            <li><a target="_self" href="../College Website/admission.html"><b>ADMISSION</b></a></li>
+            <li>
+                <a href=""><b>EVENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/workshop.html"><b>WORKSHOP</b></a></li>
+                        <li><a target="_self" href="../College Website/fest.html"><b>FEST</b></a></li>
+                        <li><a target="_self" href="../College Website/gallery.html"><b>GALLERY</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/Placement.html"><b>PLACEMENT</b></a></li>
+            <li><a target="_self" href="../College Website/alumni.html"><b>ALUMNI</b></a></li>
+            <li><a target="_self" href="../College Website/blog.html"><b>BLOG</b></a></li>
+            <li><a target="_self" href="../College Website/faq.html"><b>FAQ</b></a></li>
+        </ul>
+    </nav>
+    <section class="lab">
+        <div class="image">
+         <div >
+            <img src="../College Website/Images/Lab2.jpeg" height="100" width="150"><br>
+            <img src="../College Website/Images/Lab3.jpeg" height="100" width="150" ><br>
+            <img src="../College Website/Images/Computer Labs.png" height="100" width="150" >
+         </div>
+     
+         <div class = "content">
+             <h1>OUR LAB FACILITY</h1>
+             <span><!-- line here --></span>
+             <h2>Department of Engineering and Technology</h2>
+             <p>All the labs are very well equipped with latest configuration machines, white boards.
+                <br> Some laboratories have been provided with internet facility for experimental and research purpose. 
+                <br>Department library has been set up which has around total 1000 + books, magazines and reports that can be referred by the students. 
+                <br>Internship has been part of the curriculum.
+
+               <br> Web Development lab equipped with web programming applications and Server X3650M5.
+                
+               <br> Networking lab equipped with NETSIM – Network Simulator (Academic Version 9.1) to understand networking concepts.</p>
+              <p>
+                Bharati Vidyapeeth Deemed to be University(Department of Engineering And Technology) is the first institute having AI-ML batch all over India 
+ as it the fast-evolving field and still new in India.
+              Our institute provides advanced labs with well equipped technologies for better understanding of syllabus  </p>
+             <p>The course imparts the detailed knowledge of the programming languages that are used in developing artificial
+                  intelligence and machine learning softwares and also devices.B.Tech/BE Computer Science Engineering (AI-ML)is huge. 
+                  Artificial Intelligence (AI) and Machine Learning (ML) is bound to revolutionise the future tech industry.
+                   The AI and ML are now at a nascent stage and it is set to create a shift in the tech industry. It is estimated that by 2025 the demand 
+                   for AI and ML skilled professionals increases by 40% and the tech giants will adapt this technology for their daily business. Now the industry
+                    is looking for skilled AI and ML professionals and are ready to pay a handsome salary. The interested students can join masters by joining M.Tech/ME 
+                    or MS programmes in AI and ML.</p>
+                 </p>
+                 <h4>Address</h4>     
+                  <p>Bharati Vidyapeeth (Deemed to be University)<br>
+                  Department of Engineering And Technology<br>
+                  PLOT NO.KC1, Sector-3
+                  Kharghar, Navi Mumbai, Pin-410210 </p>
+                 <h4>Contact Number : 0001234589</h4>
+             <button type="button">Location</button>
+             <br>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.746813954578!2d73.05663351469755!3d19.030875158335064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c38a077ce761%3A0x2133ad39bcf67618!2sBharati%20Vidyapeeth%20Deemed%20University%20Department%20of%20Engineering%20and%20Technology%20(DET)%20Campus%20Mumbai!5e0!3m2!1sen!2sin!4v1657922511982!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+         </div>
+             </section>
+             
+             <div class="foot" align="right">
+                <footer align="left">
+                    <h5>ADDRESSES</h5>
+                    <p>Bharati Vidyapeeth Deemed University DET Off-Campus Navi-Mumbai,<br>
+                    Sector 4, Kharghar, <br>
+                    Navi Mumbai, <br>
+                    Maharashtra 410210.   </p><p>      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60347.92259580854!2d73.0238024!3d19.0309479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c38a077ce761%3A0x2133ad39bcf67618!2sBharati%20Vidyapeeth%20Deemed%20University%20Department%20of%20Engineering%20and%20Technology%20(DET)%20Campus%20Mumbai!5e0!3m2!1sen!2sin!4v1657965875394!5m2!1sen!2sin" width= 110" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+                </p><br>
+                <h5>CONTACT US</h5> 
+                <p>+91 987-654-3210</p><br><br>
+        
+                </footer>
+                
+                <footer>
+                    Website visit count:
+                </footer>
+                <div class="website-counter">
+                </div>
+                </footer>
+                
+                
+        
+                <footer align="center">
+                    Copyright @2022
+                </footer>
+                
+                
+            </div>    
+ </body>
+</html>

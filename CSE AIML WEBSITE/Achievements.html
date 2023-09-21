@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home_style.css">
+<style>
+
+
+.menu-wrapper {
+	position: relative;
+	max-width: 500px;
+	height: 100px; /* hide the scroll bar*/
+	margin: 1em auto;
+	border: 1px sodivd black;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.menu	{
+	height: 120px; /* hide the scroll bar*/
+	background: #f3f3f3;
+	box-sizing: border-box;
+	
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scroldivng: touch;
+}
+	
+	.item {
+		display: inline;
+		outdivne: 1px dotted gray;
+		padding: 1em;
+		box-sizing: border-box;
+                right-margin: 0;
+		border: 1px dotted;
+	}
+
+
+.paddles {
+}
+.paddle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3em;
+        height: 300px;
+}
+.left-paddle {
+	left: 0;
+}
+.right-paddle {
+	right: 0;
+}
+.hidden {
+	display: none;
+}
+
+.print {
+	margin: auto;
+	max-width: 500px;
+	
+	span {
+		display: indivne-block;
+		width : 100px;
+	}
+}	
+
+</style>
+<script>
+// duration of scroll animation
+var scrollDuration = 300;
+// paddles
+var leftPaddle = document.getElementsByClassName('left-paddle');
+var rightPaddle = document.getElementsByClassName('right-paddle');
+// get items dimensions
+var itemsLength = $('.item').length;
+var itemSize = $('.item').outerWidth(true);
+// get some relevant size for the paddle triggering point
+var paddleMargin = 20;
+
+// get wrapper width
+var getMenuWrapperSize = function() {
+	return $('.menu-wrapper').outerWidth();
+}
+var menuWrapperSize = getMenuWrapperSize();
+// the wrapper is responsive
+$(window).on('resize', function() {
+	menuWrapperSize = getMenuWrapperSize();
+});
+// size of the visible part of the menu is equal as the wrapper size 
+var menuVisibleSize = menuWrapperSize;
+
+// get total width of all menu items
+var getMenuSize = function() {
+	return itemsLength * itemSize;
+};
+var menuSize = getMenuSize();
+// get how much of menu is invisible
+var menuInvisibleSize = menuSize - menuWrapperSize;
+
+// get how much have we scrolled to the left
+var getMenuPosition = function() {
+	return $('.menu').scrollLeft();
+};
+
+// finally, what happens when we are actually scroldivng the menu
+$('.menu').on('scroll', function() {
+
+	// get how much of menu is invisible
+	menuInvisibleSize = menuSize - menuWrapperSize;
+	// get how much have we scrolled so far
+	var menuPosition = getMenuPosition();
+
+	var menuEndOffset = menuInvisibleSize - paddleMargin;
+
+	// show & hide the paddles 
+	// depending on scroll position
+	if (menuPosition <= paddleMargin) {
+		$(leftPaddle).addClass('hidden');
+		$(rightPaddle).removeClass('hidden');
+	} else if (menuPosition < menuEndOffset) {
+		// show both paddles in the middle
+		$(leftPaddle).removeClass('hidden');
+		$(rightPaddle).removeClass('hidden');
+	} else if (menuPosition >= menuEndOffset) {
+		$(leftPaddle).removeClass('hidden');
+		$(rightPaddle).addClass('hidden');
+}
+
+	// print important values
+	$('#print-wrapper-size span').text(menuWrapperSize);
+	$('#print-menu-size span').text(menuSize);
+	$('#print-menu-invisible-size span').text(menuInvisibleSize);
+	$('#print-menu-position span').text(menuPosition);
+
+});
+
+// scroll to left
+$(rightPaddle).on('cdivck', function() {
+	$('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+});
+
+// scroll to right
+$(leftPaddle).on('cdivck', function() {
+	$('.menu').animate( { scrollLeft: '0' }, scrollDuration);
+});
+</script>
+</head>
+
+<body bgcolor="rgb(219 222 222)">
+	<img src="../College Website/Images/Logo.png" alt="img" width="130" height="100" style="float:left;" class="sticky" />
+    <h1 class="mainhdg" id="myHeader">BHARATI VIDYAPEETH Deemed University <br>Department of Engineering & Technology Off-Campus <br>
+        <center>Computer Science Engineering (Artificial Intelligence & Machine Learning)</center></h1>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <nav class="navlist">
+        <ul>
+            <li><a target="_self" href="../College Website/Home.html"><img src="../College Website/Images/Home.png" alt="img" width="50" height="25"></a></li>
+            <li>
+                <a target="_self"><b>ABOUT US<i class="fas fa-caret-down"></i></b></a>
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/About Us.html"><b>BHARATI VIDYAPEETH</b></a></li>
+                        <li><a target="_self" href="../College Website/Messages.html"><b>MESSAGES</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/programme.html"><b>PROGRAM</b></a></li>
+            <li><a target="_self" href="../College Website/faculties.html"><b>FACULTIES</b></a></li>
+            <li>
+                <a href=""><b>STUDENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/studentdetails.html"><b>STUDENT INFORMATIONS</b></a></li>
+                        <li><a target="_self" href="../College Website/Achievements.html"><b>ACHIEVEMENTS</b></a></li>
+                        <li><a target="_self" href="../College Website/papers.html"><b>STUDY MATERIALS</b></a></li>
+                        <li><a target="_self" href="../College Website/timetable.html"><b>TIME TABLE</b></a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a target="_self" href="../College Website/university.html"><b>UNIVERSITY</b></a></li>
+            <li><a target="_self" href="../College Website/admission.html"><b>ADMISSION</b></a></li>
+            <li>
+                <a href=""><b>EVENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/workshop.html"><b>WORKSHOP</b></a></li>
+                        <li><a target="_self" href="../College Website/fest.html"><b>FEST</b></a></li>
+                        <li><a target="_self" href="../College Website/gallery.html"><b>GALLERY</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/Placement.html"><b>PLACEMENT</b></a></li>
+            <li><a target="_self" href="../College Website/alumni.html"><b>ALUMNI</b></a></li>
+            <li><a target="_self" href="../College Website/blog.html"><b>BLOG</b></a></li>
+            <li><a target="_self" href="../College Website/faq.html"><b>FAQ</b></a></li>
+        </ul>
+    </nav>
+	<br><br>
+<h1>Student Achievements</h1>
+<hr>
+<div style="height:400px;">
+<h2>Academic Achievements</h2><br>
+<div class="menu-wrapper" style="height:300px">
+	<div class="menu" style="height:300px; background-color:#00419d">
+
+<div class="paddles" >
+		<button class="left-paddle paddle hidden">
+			<
+		</button>
+		<button class="right-paddle paddle">
+			>
+		</button>
+	</div>
+
+
+</div>
+</div>
+</div>
+<hr>
+<div style="height:400px;">
+<h2>Sports Achievements</h2><br>
+<div class="menu-wrapper" style="height:300px">
+	<div class="menu" style="height:300px;background-color:#00419d">
+
+<div class="paddles">
+		<button class="left-paddle paddle hidden">
+			<
+		</button>
+		<button class="right-paddle paddle">
+			>
+		</button>
+	</div>
+
+	
+
+</div>
+</div>
+</div>
+<div class="foot" align="right">
+	<footer align="left">
+		<h5>ADDRESSES</h5>
+		<p>Bharati Vidyapeeth Deemed University DET Off-Campus Navi-Mumbai,<br>
+		Sector 4, Kharghar, <br>
+		Navi Mumbai, <br>
+		Maharashtra 410210.   </p><p>      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60347.92259580854!2d73.0238024!3d19.0309479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c38a077ce761%3A0x2133ad39bcf67618!2sBharati%20Vidyapeeth%20Deemed%20University%20Department%20of%20Engineering%20and%20Technology%20(DET)%20Campus%20Mumbai!5e0!3m2!1sen!2sin!4v1657965875394!5m2!1sen!2sin" width= 110" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	</p><br>
+	<h5>CONTACT US</h5> 
+	<p>+91 987-654-3210</p><br><br>
+
+	</footer>
+	
+	<footer>
+		Website visit count:
+	</footer>
+	<div class="website-counter">
+	</div>
+	</footer>
+	
+	
+
+	<footer align="center">
+		Copyright @2022
+	</footer>
+	
+	
+</div>    
+</body>
+</html>

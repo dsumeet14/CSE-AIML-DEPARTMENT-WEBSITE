@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+   <style> body{
+        font-family: 'Work Sans', sans-serif;
+    }
+    .faq-heading{
+        border-bottom: #777;
+        padding: 20px 60px;
+    }
+    .faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+    .hr-line{
+      width: 60%;
+      margin: auto;
+      
+    }
+    /* Style the buttons that are used to open and close the faq-page body */
+    .faq-page {
+        /* background-color: #eee; */
+        color: #444;
+        cursor: pointer;
+        padding: 30px 20px;
+        width: 60%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+    
+    }
+    .faq-body{
+        margin: auto;
+        /* text-align: center; */
+       width: 50%; 
+       padding: auto;
+       
+    }
+    
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .faq-page:hover {
+        background-color: #F9F9F9;
+    }
+    
+    /* Style the faq-page panel. Note: hidden by default */
+    .faq-body {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    
+    .faq-page:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="home_style.css">
+</head>
+
+<body bgcolor="#DEDBDE">
+    <img src="../College Website/Images/Logo.png" alt="img" width="130" height="100" style="float:left;" class="sticky" />
+    <h1 class="mainhdg" id="myHeader">BHARATI VIDYAPEETH Deemed University <br>Department of Engineering & Technology Off-Campus <br>
+        <center>Computer Science Engineering (Artificial Intelligence & Machine Learning)</center></h1>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <nav class="navlist">
+        <ul>
+            <li><a target="_self" href="../College Website/Home.html"><img src="../College Website/Images/Home.png" alt="img" width="50" height="25"></a></li>
+            <li>
+                <a target="_self"><b>ABOUT US<i class="fas fa-caret-down"></i></b></a>
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/About Us.html"><b>BHARATI VIDYAPEETH</b></a></li>
+                        <li><a target="_self" href="../College Website/Messages.html"><b>MESSAGES</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/programme.html"><b>PROGRAM</b></a></li>
+            <li><a target="_self" href="../College Website/faculties.html"><b>FACULTIES</b></a></li>
+            <li>
+                <a href=""><b>STUDENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/studentdetails.html"><b>STUDENT INFORMATIONS</b></a></li>
+                        <li><a target="_self" href="../College Website/Achievements.html"><b>ACHIEVEMENTS</b></a></li>
+                        <li><a target="_self" href="../College Website/papers.html"><b>STUDY MATERIALS</b></a></li>
+                        <li><a target="_self" href="../College Website/timetable.html"><b>TIME TABLE</b></a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a target="_self" href="../College Website/university.html"><b>UNIVERSITY</b></a></li>
+            <li><a target="_self" href="../College Website/admission.html"><b>ADMISSION</b></a></li>
+            <li>
+                <a href=""><b>EVENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/workshop.html"><b>WORKSHOP</b></a></li>
+                        <li><a target="_self" href="../College Website/fest.html"><b>FEST</b></a></li>
+                        <li><a target="_self" href="../College Website/gallery.html"><b>GALLERY</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/Placement.html"><b>PLACEMENT</b></a></li>
+            <li><a target="_self" href="../College Website/alumni.html"><b>ALUMNI</b></a></li>
+            <li><a target="_self" href="../College Website/blog.html"><b>BLOG</b></a></li>
+            <li><a target="_self" href="../College Website/faq.html"><b>FAQ</b></a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <main>
+        <br><br>
+        <section class="faq-container">
+            <div class="faq-one">
+
+                <!-- faq question -->
+                <h1 class="faq-page">FOUNDER</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+
+                    <center><img src="../College Website/Founder.jpg" alt="founder"><br>
+                        <b>Hon'ble Dr. Patangrao Kadam<br>
+                        M.A., LL.B., Ph.D.<br>
+                        Founder : Bharati Vidyapeeth<br>
+                        Chancellor : Bharati Vidyapeeth University, Pune</b><br>
+                    </center>
+                    <p>Dear Students,<br><br>
+
+                        I am indeed very happy to know about your interest in joining our Department of Engineering and Technology, Navi Mumbai, Maharashtra.<br><br>
+                        
+                        We established Bharati Vidyapeeth in 1964 with a realization that the all sided social transformation can be brought about through the spread of education. 
+                        Bharati Vidyapeeth celebrated its Golden Jubilee in the year. 2014. 
+                        During past 50+ years, we have established 190 educational units imparting education right from Pre Primary School to the University level.<br><br>
+                        
+                        Bharati Vidyapeeth presently runs six Engineering Colleges which are known for their academic excellence. 
+                        We have launched this Engineering College at Navi Mumbai with a view to develop it into a Centre of Innovative Academic Programmes as well as Advanced Research. 
+                        We envisage that in this College, we will prepare the students having sound base of updated knowledge of various branches of modern engineering.<br><br>
+                        
+                        Our endeavour is to make this College an ideal Institution of technical education which will develop students not only as competent professionals but also as responsible citizens with full-fledged developed personalities.<br><br>
+                        
+                        I extend my best wishes to all of you for a very successful career as a student of this college.<br><br></p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+            <div class="faq-two">
+
+                <!-- faq question -->
+                <h1 class="faq-page">CHANCELLOR</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+
+                    <center><img src="../College Website/Chancellor.jpg" alt="Chancellor"><br>
+                        <b>Hon’ble Dr. Shivajirao Kadam<br>
+                            Chancellor,<br>
+                            Bharati Vidyapeeth (Deemed to be University), Pune</b><br><br>
+                    </center>
+                    <p>Dear Students,<br><br>
+
+                        The Government of India on the recommendations of the University Grants Commission conferred the status of “Deemed to be University” initially on a cluster of twelve Institutions of Bharati Vidyapeeth. Subsequently, that number got increased. 
+                        The University started functioning on 26th April, 1996. 
+                        Now there are twenty nine constituent units of this University which include colleges of various conventional and emerging disciplines.<br><br>
+                        
+                        One of the distinguishing features of this University is three Research Institutes which it runs with its own funding:<br><br>
+                        
+                        Interactive Research School for Health Affairs (IRSHA)
+                        Research and Development Centre in Pharmaceutical Sciences and Applied Chemistry
+                        Yashwantrao Chavan Institute of Social Science Studies and Research<br><br>
+
+                        The constituent units of the University are located in Delhi, Pune, Navi Mumbai, Kolhapur, Solapur, Sangli and Karad.<br><br>
+                        
+                        During the last twenty years or so, the University has established its academic reputation to such an extent that it attracts students not only from different parts of India but also from abroad. 
+                        As on today, there are 1100 students from 44 countries enrolled with the Institutions of Bharati Vidyapeeth University.<br><br>
+                        
+                        The University is known as a vibrant centre of research activities. 
+                        Its three research institutes have very significant and globally accepted research to their credit in the areas of health sciences, pharmaceutical sciences and social sciences.<br><br>
+                        
+                        The publication track record of the faculty is very commendable. 
+                        During the last five years or so, they have published 573 research based articles in national and 798 in international journals. 
+                        Besides they have also obtained more than 25 patents for their research products.<br><br>
+                        
+                        The high degree of academic excellence which the University has achieved is highlighted by the fact that the National Assessment and Accreditation Council (NAAC) has awarded prestigious ‘A’ grade to it consecutively twice, firstly in 2004 and then in 2011 and A+ in 2017.<br><br>
+                        
+                        I wish you all the best.<br><br>
+                        
+                        </p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+
+            <div class="faq-three">
+
+                <!-- faq question -->
+        <h1 class="faq-page">Pro Vice-Chancellor</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+
+                    <center><img src="../College Website/Pro VC.jpg" alt="Pro VC"><br>
+                        <b>Hon. Dr. Vishwajeet Kadam,<br>
+                            B.E. (Comp.), M.B.A, Ph.D.,<br>
+                            Pro-Vice Chancellor and Secretary,<br>
+                            Bharati Vidyapeeth (Deemed to be University), Pune</b><br><br>
+                    </center>
+                    <p>Dear Students,<br><br>
+
+                        Bharati Vidyapeeth, the parent organization of this College was established by Dr. Patangrao Kadam in 1964 with its motto, “Social Transformation through Dynamic Education”. 
+                        The Founder of Bharati Vidyapeeth had then realized that education could play a crucial role in bringing about intellectual awakening of the people and also their all sided development.<br><br>
+                        
+                        Although it had a very humble beginning, Bharati Vidyapeeth has now grown into one of the largest and well reputed educational organizations in the country. 
+                        There are now 190 educational units which cater to the needs of students right from Pre-Primary stage to the Doctoral stage under the umbrella of Bharati Vidyapeeth. 
+                        Bharati Vidyapeeth is an institution with its own ideological commitments. 
+                        One of its objectives is to make education of a good quality available to the students according to their preferences at affordable costs. 
+                        Therefore, it has established educational institution of various kinds.<br><br>
+                        
+                        Among them there are 73 schools working at different levels, besides 67 Colleges of higher education. 
+                        They include Colleges of Medicine, Dentistry, Ayurved, Pharmacy, Environment, Law, Engineering, Architecture, Hotel Management, Biotechnology, Information and Communication Technologies, Geo-informatics and the like. 
+                        Bharati Vidyapeeth is one of very few educational Institutions imparting educations in almost all the conventional as well as emerging disciplines.<br><br>
+                        
+                        All the schools and colleges of Bharati Vidyapeeth are known for their academic excellence. 
+                        It has been a constant endeavour of Bharati Vidyapeeth to contribute its share to the all sided development of society through the medium of education. 
+                        Through its Institutions, Bharati Vidyapeeth has made continuously updated education available to the students in a carefully created environment conducive for academic pursuits. 
+                        The Institutions of Bharati Vidyapeeth are located in seventeen campuses, one each in New Delhi, Kadegaon, Karad, Palus and Solapur, two each at Navi Mumbai and Kolhapur, four each in Sangli and Pune and one in Dubai. 
+                        All the Institutions of Bharati Vidyapeeth right from the Pre-Primary Schools to the Colleges of professional education are housed in spacious well designed buildings and their libraries and laboratories are continuously updated. 
+                        Our constant efforts are in the direction to bring out the potential of each student and to equip him with knowledge and skills professionally required.<br><br>
+                        
+                        I extend my best wishes to all of you at the beginning of your professional education.<br><br><br>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+            <div class="faq-four">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Principal</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+
+                    <center><img src="../College Website/Principal.jpg" alt="Principal" height="200" width="190"><br>
+                        <b>Dr. Mohan Awasthy<br>
+                            M.Tech., Ph.D.<br>
+                            Principal,<br>
+                            Department of Engineering and Technology<br>
+                            Bharati Vidyapeeth (Deemed to be University)<br>
+                            Navi Mumbai</b><br><br>
+                    </center>
+                    <p>Dear Students,<br><br>
+
+                        The technology education has a more dramatic effect on social transformation today due to the astonishing pace of change in the global economy. 
+                        Consumers are passionate and industries are obsessive to invent and satiate the consumer needs. 
+                        Thus globalization and fast pace of industry demands for cutting edge technology education. 
+                        Bharati Vidyapeeth’s Department of Engineering and Technology, Navi Mumbai provides the gateway to the state-of-the-art technology education to fulfil industry and global requirements.<br><br>
+                        
+                        Hon. Founder Dr. Patangraoji Kadam Saheb’s vision of “Social Transformation through Dynamic Education” is transcended into the development of Department of Engineering and Technology, Navi Mumbai, Maharashtra with benchmarking of international educational standards. 
+                        This is reflected in the expanse of its building and infrastructure as well as the highly qualified faculty. 
+                        The laboratories have requisite instrumentation and digital computing fcilities with state-of-the-art configuration. 
+                        Beyond the requirements of books and journals available in the library is the seminar hall facility for each department and a picturesque open air Amphitheatre.<br><br>
+                        
+                        I welcome you to this extra-ordinary Department of Engineering and Technology, Navi Mumbai, Maharashtra campus, where we are fuelled to shape up career of our students in a way to be the “Resource to reckon with”. 
+                        We are committed to impart not only the subject knowledge but also the professional skills suitable for the diverse global industrial needs. 
+                        We are laying foundation to ensure the 100% success record for our students along with 100% campus placement. 
+                        We imbibe the culture that ensures our students to be good citizens as well as netizens. We assure our students that the time they invest at Department of Engineering and Technology, Navi Mumbai, Maharashtra, will see millions of hopes and guaranteed satisfaction throughout their lives.<br><br>
+                        
+                        Wish you all the best.<br><br><br></p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+        </section>
+    </main>
+    <script src="faqjs.js"></script>
+    <br><br>
+    <div class="foot" align="right">
+        <footer align="left">
+            <h5>ADDRESSES</h5>
+            <p>Bharati Vidyapeeth Deemed University DET Off-Campus Navi-Mumbai,<br>
+            Sector 4, Kharghar, <br>
+            Navi Mumbai, <br>
+            Maharashtra 410210.   </p><p>      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60347.92259580854!2d73.0238024!3d19.0309479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c38a077ce761%3A0x2133ad39bcf67618!2sBharati%20Vidyapeeth%20Deemed%20University%20Department%20of%20Engineering%20and%20Technology%20(DET)%20Campus%20Mumbai!5e0!3m2!1sen!2sin!4v1657965875394!5m2!1sen!2sin" width= 110" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </p><br>
+        <h5>CONTACT US</h5> 
+        <p>+91 987-654-3210</p><br><br>
+
+        </footer>
+        
+        <footer>
+            Website visit count:
+        </footer>
+        <div class="website-counter">
+        </div>
+        </footer>
+        
+        
+
+        <footer align="center">
+            Copyright @2022
+        </footer>
+        
+        
+    </div>    
+</body>
+
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+   <style> body{
+        font-family: 'Work Sans', sans-serif;
+    }
+    .faq-heading{
+        border-bottom: #777;
+        padding: 20px 60px;
+    }
+    .faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+    .hr-line{
+      width: 60%;
+      margin: auto;
+      
+    }
+    /* Style the buttons that are used to open and close the faq-page body */
+    .faq-page {
+        /* background-color: #eee; */
+        color: #444;
+        cursor: pointer;
+        padding: 30px 20px;
+        width: 60%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+    
+    }
+    .faq-body{
+        margin: auto;
+        /* text-align: center; */
+       width: 50%; 
+       padding: auto;
+       
+    }
+    
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .faq-page:hover {
+        background-color: #F9F9F9;
+    }
+    
+    /* Style the faq-page panel. Note: hidden by default */
+    .faq-body {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    
+    .faq-page:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="home_style.css">
+</head>
+
+<body bgcolor="#DEDBDE">
+    <img src="../College Website/Images/Logo.png" alt="img" width="130" height="100" style="float:left;" class="sticky" />
+    <h1 class="mainhdg" id="myHeader">BHARATI VIDYAPEETH Deemed University <br>Department of Engineering & Technology Off-Campus <br>
+        <center>Computer Science Engineering (Artificial Intelligence & Machine Learning)</center></h1>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <nav class="navlist">
+        <ul>
+            <li><a target="_self" href="../College Website/Home.html"><img src="../College Website/Images/Home.png" alt="img" width="50" height="25"></a></li>
+            <li>
+                <a target="_self"><b>ABOUT US<i class="fas fa-caret-down"></i></b></a>
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/About Us.html"><b>BHARATI VIDYAPEETH</b></a></li>
+                        <li><a target="_self" href="../College Website/Messages.html"><b>MESSAGES</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/programme.html"><b>PROGRAM</b></a></li>
+            <li><a target="_self" href="../College Website/faculties.html"><b>FACULTIES</b></a></li>
+            <li>
+                <a href=""><b>STUDENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/studentdetails.html"><b>STUDENT INFORMATIONS</b></a></li>
+                        <li><a target="_self" href="../College Website/Achievements.html"><b>ACHIEVEMENTS</b></a></li>
+                        <li><a target="_self" href="../College Website/papers.html"><b>STUDY MATERIALS</b></a></li>
+                        <li><a target="_self" href="../College Website/timetable.html"><b>TIME TABLE</b></a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a target="_self" href="../College Website/university.html"><b>UNIVERSITY</b></a></li>
+            <li><a target="_self" href="../College Website/admission.html"><b>ADMISSION</b></a></li>
+            <li>
+                <a href=""><b>EVENTS <i class="fas fa-caret-down"></i></b></a>
+
+                <div class="dd__menu">
+                    <ul>
+                        <li><a target="_self" href="../College Website/workshop.html"><b>WORKSHOP</b></a></li>
+                        <li><a target="_self" href="../College Website/fest.html"><b>FEST</b></a></li>
+                        <li><a target="_self" href="../College Website/gallery.html"><b>GALLERY</b></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a target="_self" href="../College Website/Placement.html"><b>PLACEMENT</b></a></li>
+            <li><a target="_self" href="../College Website/alumni.html"><b>ALUMNI</b></a></li>
+            <li><a target="_self" href="../College Website/blog.html"><b>BLOG</b></a></li>
+            <li><a target="_self" href="../College Website/faq.html"><b>FAQ</b></a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <main>
+
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+
+                <!-- faq question -->
+                <h1 class="faq-page">HOW TO APPLY?</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>After getting the information regarding the courses and fulfilling the eligibility criteria, the student can apply for any number of courses by paying required registration amount for reserving the seat (which will be adjusted with their Tuition Fee).<br></p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+            <div class="faq-two">
+
+                <!-- faq question -->
+                <h1 class="faq-page">HOW DOES THE COLLEGE ADMISSION PROCESS WORK?</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>The application, transcripts and test scores you send to the Graduate Admission Office are evaluated to ensure that they meet the eligibility criteria set by the Bangalore University. This applies to all courses.
+
+                        An admission committee constituted of departmental admission officers and faculty members specializing in your field of study review all your application materials. For UG Courses, the Admission Process involves a personal interview and submission of Original marks card for which you can come personally or send a request through telephone for an Interview appointment.
+                        
+                        For PG Courses, you have to undergo the Selection Round, a test to assess your written English Communication Skills, Analytical Skills and Aptitude at the AIMS Campus and Regional Admission Centres.
+                        
+                        You receive a letter from the AIMS Dean of Admission, notifying you of your admission status. In case of MBA, PGDITM Programmes if found eligible on verification and found successfully competing in Selection Round, you will receive the Registration Form to take Provisional Admission on payment of the required fee.<br></p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+
+            <div class="faq-three">
+
+                <!-- faq question -->
+<h1 class="faq-page">HOUSING / HOSTEL ACCOMODATION</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>BVPDET provide two bedded and three bedded hostel accommodation with all standard civic amenities and common cooking and laundry areas. You should submit your request as soon as possible, because requests are processed on a first-come, first-serve basis, and rooms fill up quickly.<br></p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+            <div class="faq-four">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Will I have to undergo ragging in college as a fresher?</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>No. Almost all colleges around the world have strict guidelines concerning ragging. If any student is involved, then the same will be liable for suspension from classes or even expulsion from the college. If you feel harassed by other students upon joining college, then make sure to contact the dean’s office immediately.<br></p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line">
+
+        </section>
+    </main>
+    <script src="faqjs.js"></script>
+    <br><br>
+    <div class="foot" align="right">
+        <footer align="left">
+            <h5>ADDRESSES</h5>
+            <p>Bharati Vidyapeeth Deemed University DET Off-Campus Navi-Mumbai,<br>
+            Sector 4, Kharghar, <br>
+            Navi Mumbai, <br>
+            Maharashtra 410210.   </p><p>      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60347.92259580854!2d73.0238024!3d19.0309479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c38a077ce761%3A0x2133ad39bcf67618!2sBharati%20Vidyapeeth%20Deemed%20University%20Department%20of%20Engineering%20and%20Technology%20(DET)%20Campus%20Mumbai!5e0!3m2!1sen!2sin!4v1657965875394!5m2!1sen!2sin" width= 110" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </p><br>
+        <h5>CONTACT US</h5> 
+        <p>+91 987-654-3210</p><br><br>
+
+        </footer>
+        
+        <footer>
+            Website visit count:
+        </footer>
+        <div class="website-counter">
+        </div>
+        </footer>
+        
+        
+
+        <footer align="center">
+            Copyright @2022
+        </footer>
+        
+        
+    </div>    
+</body>
+
+
+</html>
